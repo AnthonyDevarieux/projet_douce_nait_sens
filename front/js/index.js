@@ -1,0 +1,37 @@
+// Fonction pour le défilement progressif
+function smoothScroll(target) {
+    const targetPosition = document.querySelector(target).offsetTop;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 1000;
+    let start = null;
+
+    function animation(currentTime) {
+      if (!start) start = currentTime;
+      const progress = currentTime - start;
+      const newPosition = easeInOutQuad(progress, startPosition, distance, duration);
+      window.scrollTo(0, newPosition);
+      if (progress < duration) requestAnimationFrame(animation);
+    }
+
+    function easeInOutQuad(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return c / 2 * t * t + b;
+      t--;
+      return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+  }
+
+  // Ajoutez un écouteur d'événement au lien "Accueil"
+  document.querySelector('nav a[href="#banniere-accueil"]').addEventListener('click', function (event) {
+    event.preventDefault();
+    smoothScroll('#banniere-accueil');
+  });
+
+  // Ajoutez un écouteur d'événement au lien "Prestations"
+  document.querySelector('nav a[href="#prestations"]').addEventListener('click', function (event) {
+    event.preventDefault();
+    smoothScroll('#prestations');
+  });
