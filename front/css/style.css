@@ -8,7 +8,7 @@
     src: url(../polices/HelveticaNeueLTCom-Lt.ttf) format('truetype');
 }
 
-@keyframes slideRight{
+@keyframes slideRight {
     0% {
       transform: translateX(-100%);
       opacity: 0;
@@ -19,121 +19,281 @@
     }
 }
 
-@media screen and (min-width: 1920px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: red;
-        font-family: 'HelveticaNeueLTCom', sans-serif;
-    }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF5F4;
+    font-family: 'HelveticaNeueLTCom', sans-serif;
+}
 
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: aqua;
-        width: 99%;
-    }
+/*HEADER*/
 
-    #header-logo {
-        background-color: black;
-        position: relative;
-        z-index: 0;
-        width: 55%;
-    }
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    width: 99%;
+}
 
+#header-logo { 
+    position: relative;
+    z-index: 0;
+    width: 55%;
+}
+
+nav {
+    position: relative;
+    bottom: 120px;
+    z-index: 1;
+    background-color: #FFF5F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin-left: 5px;
+    width: 55%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    position: relative;
+    color: #DA755C;
+    display: block;
+    font-size: 26px;
+    font-family: 'BacktoBlackDemo', serif;
+    text-decoration: none;
+    padding: 20px 30px 15px 30px;
+    transition: background-color 1s, color 1s;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #DA755C;
+    z-index: -1;
+    transition: width 1s;
+}
+  
+nav a:hover {
+    color: #FFF5F4;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 500px;
+    background-color: #FFF5F4;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    animation: slideRight 1s forwards;
+}
+
+nav ul ul li {
+    opacity: 0;
+    animation: slideRight 1s forwards;
+}
+
+nav ul ul a {
+    position: relative;
+    color: #DA755C;
+    font-size: 20px;
+    font-family: 'HelveticaNeueLTCom', sans-serif;
+    text-transform: none;
+    width: 92%;
+    padding: 15px 20px;
+}
+
+nav ul ul a:hover {
+    color: #FFF5F4;
+}
+
+/*BOUTON REMONTER*/
+
+#back-to-top {
+    visibility: hidden;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 100;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
+}
+  
+#back-to-top img {
+    width: 15%;
+}
+
+#back-to-top.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*BANNIERE*/
+
+#banniere-accueil img{
+    width: 100%;
+}
+
+@media all and (min-width: 1366px) and (max-width: 1920px) {
+    /*HEADER*/
     nav {
-        position: relative;
-        bottom: 100px;
-        z-index: 1;
-        background-color: #FFF5F4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 0;
-        margin-left: 10px;
-        width: 55%;
+        bottom: 90px;
     }
-
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 60%;
-    }
-
-    nav li {
-        position: relative;
-    }
-
     nav a {
-        position: relative;
-        color: #DA755C;
-        display: block;
-        font-size: 25px;
-        font-family: 'BacktoBlackDemo', serif;
-        text-decoration: none;
-        padding: 15px 25px 10px 25px;
-        transition: background-color 1s, color 1s;
+        font-size: 22px;
     }
-
-    nav a::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: #DA755C;
-        z-index: -1;
-        transition: width 1s;
-    }
-      
-    nav a:hover {
-        color: #FFF5F4;
-    }
-
-    nav a:hover::before {
-        width: 100%;
-    }
-
-    nav ul ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 500px;
-        background-color: #FFF5F4;
-    }
-
-    nav ul li:hover > ul {
-        display: block;
-        animation: slideRight 1s forwards;
-    }
-
-    nav ul ul li {
-        opacity: 0;
-        animation: slideRight 1s forwards;
-    }
-
     nav ul ul a {
-        position: relative;
-        color: #DA755C;
+        font-size: 16px;
+    }
+    /*BOUTON REMONTER*/
+    #back-to-top {
+        bottom: 80px;
+        right: -75px;
+    }
+    #back-to-top img {
+        width: 12%;
+    }
+    /*BANNIERE*/
+}
+
+@media all and (min-width: 1024px) and (max-width: 1365px) {
+    /*HEADER*/
+    #header-logo {
+        width: 65%;
+    }
+    nav{
+        bottom: 75px;
+    }
+    nav a {
+        font-size: 22px;
+    }
+    nav ul ul a {
+        font-size: 16px;
+    }
+    nav ul li:hover > ul {
+        display: none;
+    }
+    /*BOUTON REMONTER*/
+    #back-to-top {
+        bottom: 50px;
+        right: -150px;
+    }
+    #back-to-top img {
+        width: 12%;
+    }
+    /*BANNIERE*/
+}
+
+@media all and (min-width: 700px) and (max-width: 1023px) {
+    /*HEADER*/
+    #header-logo {
+        width: 75%;
+    }
+    nav{
+        bottom: 60px;
+    }
+    nav a {
+        font-size: 22px;
+    }
+    nav ul ul {
+        width: 350px;
+    }
+    nav ul ul a {
+        font-size: 14px;
+        width: 88.5%;
+    }
+    nav ul li:hover > ul {
+        display: none;
+    }
+    /*BOUTON REMONTER*/
+    #back-to-top {
+        bottom: 50px;
+        right: -150px;
+    }
+    #back-to-top img {
+        width: 12%;
+    }
+    /*BANNIERE*/
+}
+
+@media all and (min-width: 426px) and (max-width: 699px) {
+    /*HEADER*/
+    #header-logo {
+        width: 85%;
+    }
+    nav{
+        bottom: 50px;
+    }
+    nav a {
+        padding: 15px 25px 10px 25px;
         font-size: 20px;
-        font-family: 'HelveticaNeueLTCom', sans-serif;
-        text-transform: none;
-        width: 92%;
-        padding: 15px 20px;
     }
+    nav ul li:hover > ul {
+        display: none;
+    }
+    /*BOUTON REMONTER*/
+    #back-to-top {
+        bottom: 30px;
+        right: -180px;
+    }
+    #back-to-top img {
+        width: 10%;
+    }
+    /*BANNIERE*/
+}
 
-    nav ul ul a:hover {
-        color: #FFF5F4;
+@media all and (max-width: 425px) {
+    /*HEADER*/
+    #header-logo {
+        width: 85%;
     }
-
-    #banniere-accueil img{
-        width: 100%;
+    nav{
+        bottom: 25px;
     }
+    nav a {
+        padding: 15px 20px 10px 20px;
+        font-size: 18px;
+    }
+    nav ul li:hover > ul {
+        display: none;
+    }
+    /*BOUTON REMONTER*/
+    #back-to-top {
+        bottom: 20px;
+        right: -200px;
+    }
+    #back-to-top img {
+        width: 10%;
+    }
+    /*BANNIERE*/
 }
