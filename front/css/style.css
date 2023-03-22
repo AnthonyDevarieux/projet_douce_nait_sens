@@ -23,8 +23,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #DA755C;
     background-color: #FFF5F4;
     font-family: 'HelveticaNeueLTCom', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'BacktoBlackDemo', serif;
+}
+
+p {
+    font-size: 20px;
 }
 
 /*HEADER*/
@@ -41,6 +50,8 @@ header {
     z-index: 0;
     width: 55%;
 }
+
+/*BARRE DE NAVIGATION*/
 
 nav {
     position: relative;
@@ -120,7 +131,6 @@ nav ul ul li {
 
 nav ul ul a {
     position: relative;
-    color: #DA755C;
     font-size: 20px;
     font-family: 'HelveticaNeueLTCom', sans-serif;
     text-transform: none;
@@ -158,14 +168,49 @@ nav ul ul a:hover {
     opacity: 1;
 }
 
-/*BANNIERE*/
+/*MAIN*/
 
-#banniere-accueil img{
+main {
     width: 100%;
 }
 
+/*BANNIERE*/
+
+#banniere-accueil {
+    position: relative;
+    width: 100%;
+    max-height: 600px;
+}
+
+#banniere-accueil img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+#texte-banniere-accueil {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+#texte-banniere-accueil h1 {
+    font-size: 38px;
+}
+
+#phrase-accroche {
+    font-family: 'BacktoBlackDemo', serif;
+    font-size: 30px;
+}
+
 @media all and (min-width: 1366px) and (max-width: 1920px) {
+    p {
+        font-size: 18px;
+    }
     /*HEADER*/
+    /*BARRE DE NAVIGATION*/
     nav {
         bottom: 90px;
     }
@@ -183,23 +228,36 @@ nav ul ul a:hover {
     #back-to-top img {
         width: 12%;
     }
-    /*BANNIERE*/
+    /*MAIN*/
+    /*BANNIERE*/   
+    #texte-banniere-accueil {
+        left: 12%;
+    }
+    
+    #texte-banniere-accueil h1 {
+        font-size: 34px;
+    }
+    
+    #phrase-accroche {
+        font-size: 26px;
+    }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1365px) {
+    p {
+        font-size: 18px;
+    }
     /*HEADER*/
     #header-logo {
         width: 65%;
     }
+    /*BARRE DE NAVIGATION*/
     nav{
         bottom: 75px;
     }
     nav a {
         font-size: 22px;
     }
-    nav ul ul a {
-        font-size: 16px;
-    }
     nav ul li:hover > ul {
         display: none;
     }
@@ -211,27 +269,36 @@ nav ul ul a:hover {
     #back-to-top img {
         width: 12%;
     }
+    /*MAIN*/
     /*BANNIERE*/
+    #texte-banniere-accueil {
+        left: 10%;
+    }
+    
+    #texte-banniere-accueil h1 {
+        font-size: 30px;
+    }
+    
+    #phrase-accroche {
+        font-size: 22px;
+    }
 }
 
 @media all and (min-width: 700px) and (max-width: 1023px) {
+    p {
+        font-size: 16px;
+    }
     /*HEADER*/
     #header-logo {
         width: 75%;
     }
+    /*BARRE DE NAVIGATION*/
     nav{
         bottom: 60px;
     }
     nav a {
         font-size: 22px;
     }
-    nav ul ul {
-        width: 350px;
-    }
-    nav ul ul a {
-        font-size: 14px;
-        width: 88.5%;
-    }
     nav ul li:hover > ul {
         display: none;
     }
@@ -243,14 +310,37 @@ nav ul ul a:hover {
     #back-to-top img {
         width: 12%;
     }
+    /*MAIN*/
     /*BANNIERE*/
+    #banniere-accueil {
+        height: 500px;
+    }
+    
+    #banniere-accueil img {
+        height: 500px;
+    }
+    #texte-banniere-accueil {
+        left: 10%;
+    }
+    
+    #texte-banniere-accueil h1 {
+        font-size: 28px;
+    }
+    
+    #phrase-accroche {
+        font-size: 20px;
+    }
 }
 
 @media all and (min-width: 426px) and (max-width: 699px) {
+    p {
+        font-size: 16px;
+    }
     /*HEADER*/
     #header-logo {
         width: 85%;
     }
+    /*BARRE DE NAVIGATION*/
     nav{
         bottom: 50px;
     }
@@ -269,14 +359,37 @@ nav ul ul a:hover {
     #back-to-top img {
         width: 10%;
     }
+    /*MAIN*/
     /*BANNIERE*/
+    #banniere-accueil {
+        height: 500px;
+    }
+    
+    #banniere-accueil img {
+        height: 500px;
+    }
+    #texte-banniere-accueil {
+        left: 10%;
+    }
+    
+    #texte-banniere-accueil h1 {
+        font-size: 28px;
+    }
+    
+    #phrase-accroche {
+        font-size: 20px;
+    }
 }
 
 @media all and (max-width: 425px) {
+    p {
+        font-size: 16px;
+    }
     /*HEADER*/
     #header-logo {
         width: 85%;
     }
+    /*BARRE DE NAVIGATION*/
     nav{
         bottom: 25px;
     }
@@ -295,5 +408,28 @@ nav ul ul a:hover {
     #back-to-top img {
         width: 10%;
     }
+    /*MAIN*/
     /*BANNIERE*/
+    #banniere-accueil {
+        height: 400px;
+    }
+    
+    #banniere-accueil img {
+        height: 400px;
+    }
+    
+    #texte-banniere-accueil {
+        text-align: center;
+        left: 15%;
+        right: 15%;
+        transform: translateY(-50%), translateX(-50%);
+    }
+    
+    #texte-banniere-accueil h1 {
+        font-size: 28px;
+    }
+    
+    #phrase-accroche {
+        font-size: 24px;
+    }
 }
