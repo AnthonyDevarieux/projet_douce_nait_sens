@@ -10,12 +10,12 @@
 
 @keyframes slideRight {
     0% {
-      transform: translateX(-100%);
-      opacity: 0;
+        transform: translateX(-100%);
+        opacity: 0;
     }
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
@@ -30,6 +30,14 @@ body {
 
 h1, h2, h3 {
     font-family: 'BacktoBlackDemo', serif;
+}
+
+h1, h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 24px;
 }
 
 p {
@@ -196,16 +204,67 @@ main {
     transform: translateY(-50%);
 }
 
-#texte-banniere-accueil h1 {
-    font-size: 38px;
-}
-
 #phrase-accroche {
     font-family: 'BacktoBlackDemo', serif;
     font-size: 30px;
 }
 
+/*ARTICLES*/
+
+#texte-accueil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    line-height: 1.5;
+    width: 40%;
+}
+
+#presentation a {
+    text-decoration: none;
+    color: #DA755C;
+    width: 84px;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+  
+#presentation a:hover {
+    display: inline-block;
+    width: 94px;
+    background-color: #DA755C;
+    color: #FFF5F4;
+}
+
+#formation {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    line-height: 1.5;
+    width: 50%;
+}
+
+#formation h2 {
+    margin-bottom: 40px;
+}
+
+#formation h3 {
+    margin-bottom: 0px;
+}
+
 @media all and (min-width: 1366px) and (max-width: 1920px) {
+    h1, h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 22px;
+    }
     p {
         font-size: 18px;
     }
@@ -233,17 +292,25 @@ main {
     #texte-banniere-accueil {
         left: 12%;
     }
-    
-    #texte-banniere-accueil h1 {
-        font-size: 34px;
-    }
-    
     #phrase-accroche {
         font-size: 26px;
+    }
+    /*ARTICLES*/
+    #presentation {
+        width: 55%;
+    }
+    #formation {
+        width: 70%;
     }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1365px) {
+    h1, h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 22px;
+    }
     p {
         font-size: 18px;
     }
@@ -274,17 +341,25 @@ main {
     #texte-banniere-accueil {
         left: 10%;
     }
-    
-    #texte-banniere-accueil h1 {
-        font-size: 30px;
-    }
-    
     #phrase-accroche {
         font-size: 22px;
+    }
+    /*ARTICLES*/
+    #presentation {
+        width: 60%;
+    }
+    #formation {
+        width: 70%;
     }
 }
 
 @media all and (min-width: 700px) and (max-width: 1023px) {
+    h1, h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 22px;
+    }
     p {
         font-size: 16px;
     }
@@ -322,17 +397,31 @@ main {
     #texte-banniere-accueil {
         left: 10%;
     }
-    
-    #texte-banniere-accueil h1 {
-        font-size: 28px;
-    }
-    
     #phrase-accroche {
         font-size: 20px;
+    }
+    /*ARTICLES*/
+    #presentation a {
+        width: 70px;
+    }
+    #presentation a:hover {
+        width: 80px;
+    }
+    #presentation {
+        width: 75%;
+    }
+    #formation {
+        width: 80%;
     }
 }
 
 @media all and (min-width: 426px) and (max-width: 699px) {
+    h1, h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 20px;
+    }
     p {
         font-size: 16px;
     }
@@ -379,19 +468,110 @@ main {
     #phrase-accroche {
         font-size: 20px;
     }
+    /*ARTICLES*/
+    #presentation a {
+        width: 70px;
+    }
+    #presentation a:hover {
+        width: 80px;
+    }
+    #presentation {
+        width: 75%;
+    }
+    #formation {
+        width: 80%;
+    }
 }
 
-@media all and (max-width: 425px) {
+@media all and (min-width: 400px) and (max-width: 425px) {
+    h1, h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 20px;
+    }
     p {
         font-size: 16px;
     }
     /*HEADER*/
     #header-logo {
-        width: 85%;
+        width: 100%;
     }
     /*BARRE DE NAVIGATION*/
     nav{
-        bottom: 25px;
+        bottom: 35px;
+    }
+    nav a {
+        padding: 15px 20px 10px 20px;
+        font-size: 20px;
+    }
+    nav ul li:hover > ul {
+        display: none;
+    }
+    /*BOUTON REMONTER*/
+    #back-to-top {
+        bottom: 20px;
+        right: -200px;
+    }
+    #back-to-top img {
+        width: 10%;
+    }
+    /*MAIN*/
+    /*BANNIERE*/
+    #banniere-accueil {
+        height: 450px;
+    }
+    
+    #banniere-accueil img {
+        height: 450px;
+    }
+    
+    #texte-banniere-accueil {
+        line-height: 1.8;
+        text-align: center;
+        left: 15%;
+        right: 15%;
+        transform: translateY(-50%), translateX(-50%);
+    }
+    #phrase-accroche {
+        font-size: 20px;
+    }
+    /*ARTICLES*/
+    #presentation {
+        padding-top: 50px;
+        width: 75%;
+    }
+    #presentation a {
+        width: 70px;
+    }
+    #presentation a:hover {
+        width: 80px;
+    }
+    #formation {
+        padding-top: 40px;
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 399px) {
+    h1, h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+    /*HEADER*/
+    #header-logo {
+        padding-top: 150px;
+        width: 100%;
+    }
+    /*BARRE DE NAVIGATION*/
+    nav{
+        padding: 50px 0px 60px 0px;
+        bottom: 35px;
     }
     nav a {
         padding: 15px 20px 10px 20px;
@@ -411,25 +591,36 @@ main {
     /*MAIN*/
     /*BANNIERE*/
     #banniere-accueil {
-        height: 400px;
+        height: 450px;
     }
     
     #banniere-accueil img {
-        height: 400px;
+        height: 450px;
     }
     
     #texte-banniere-accueil {
+        line-height: 1.5;
         text-align: center;
         left: 15%;
         right: 15%;
         transform: translateY(-50%), translateX(-50%);
     }
-    
-    #texte-banniere-accueil h1 {
-        font-size: 28px;
-    }
-    
     #phrase-accroche {
-        font-size: 24px;
+        font-size: 20px;
+    }
+    /*ARTICLES*/
+    #presentation {
+        padding-top: 50px;
+        width: 75%;
+    }
+    #presentation a {
+        width: 70px;
+    }
+    #presentation a:hover {
+        width: 80px;
+    }
+    #formation {
+        padding-top: 40px;
+        width: 80%;
     }
 }
