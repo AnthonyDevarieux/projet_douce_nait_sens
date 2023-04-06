@@ -335,7 +335,7 @@ footer {
     padding: 0;
     width: 260px;
     position: relative;
-    bottom: 50px;
+    bottom: 45px;
 }
 
 #icons-footer img {
@@ -349,6 +349,7 @@ footer {
     bottom: 160px;
     text-align: center;
     width: 80%;
+    z-index: -1;
 }
 
 .info-texte {
