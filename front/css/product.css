@@ -1,0 +1,50 @@
+/* RESOLUTION AU DESSUS DE 1900px */
+
+h1 {
+    font-size: 50px;
+}
+
+/*BARRE DE NAVIGATION*/
+nav {
+    position: relative;
+    z-index: 1;
+    background-color: #FFF5F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 55%;
+}
+
+/*BANNIERE*/
+#texte-banniere {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+@media all and (min-width: 1366px) and (max-width: 1900px) {
+
+}
+
+@media all and (min-width: 1024px) and (max-width: 1365px) {
+
+}
+
+@media all and (min-width: 700px) and (max-width: 1023px) {
+
+}
+
+@media all and (min-width: 426px) and (max-width: 699px) {
+
+}
+
+@media all and (min-width: 400px) and (max-width: 425px) {
+
+}
+
+@media all and (max-width: 399px) {
+    
+}

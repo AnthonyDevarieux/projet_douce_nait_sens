@@ -28,9 +28,9 @@ function smoothScroll(target) {
 
 // Ajoute des écouteurs d'événements aux liens "Accueil" et "Prestations"
 function addNavigationEventListeners() {
-  document.querySelector('nav a[href="#banniere-accueil"]').addEventListener('click', function (event) {
+  document.querySelector('nav a[href="#banniere"]').addEventListener('click', function (event) {
     event.preventDefault();
-    smoothScroll('#banniere-accueil');
+    smoothScroll('#banniere');
   });
 
   document.querySelector('nav a[href="#prestations"]').addEventListener('click', function (event) {
@@ -42,7 +42,7 @@ function addNavigationEventListeners() {
 // Gestion de la visibilité du bouton "back-to-top"
 function handleBackToTopButtonVisibility() {
   const backToTopButton = document.getElementById("back-to-top");
-  const bannerElement = document.getElementById("banniere-accueil");
+  const bannerElement = document.getElementById("banniere");
 
   function handleScroll() {
     if (window.pageYOffset > bannerElement.offsetHeight) {
