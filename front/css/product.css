@@ -19,32 +19,245 @@ nav {
 /*BANNIERE*/
 #texte-banniere {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
+    text-align: center;
+    line-height: 1.5;
+    right: 10%;
+    left: 10%;
+    top: 25%;
 }
 
-@media all and (min-width: 1366px) and (max-width: 1900px) {
+/*PRESENTATION*/
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#presentation {
+    position: relative;
+    bottom: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1100px;
+}
+
+#texte-presentation {
+    background-color: #da755c81;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 50px 5px 50px;
+    width: 350px;
+}
+
+#img-presentation {
+    position: relative;
+    bottom: 440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 1600px;
+}
+
+#img-presentation img {
+    width: 26%;
+}
+
+#logo-presentation {
+    box-shadow: none;
+    position: relative;
+    top: 70px;
+}
+
+/*DEROULE*/
+#prestation-deroule {
+    position: relative;
+    bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 1400px;
+    line-height: 1.4;
+}
+
+#prestation-deroule img {
+    width: 55%;
+    margin-bottom: 60px;
+}
+
+#prestation-deroule aside {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+/*CARTE CADEAU*/
+#carte-cadeau {
+    background-color: aqua;
+}
+
+
+@media all and (min-width: 1366px) and (max-width: 1900px) {
+    h1 {
+        font-size: 40px;
+    }
+    #texte-presentation {
+        width: 300px;
+    }
+    #img-presentation {
+        bottom: 380px;
+        width: 1300px;
+    }
+    #img-presentation img {
+        width: 26%;
+    }
+    /*DEROULE*/
+    #prestation-deroule {
+        bottom: 320px;
+        width: 1000px;
+    }
+    #prestation-deroule img {
+        width: 65%;
+        margin-bottom: 40px;
+    }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1365px) {
-
+    h1 {
+        font-size: 40px;
+    }
+    #texte-banniere {
+        top: 20%;
+    }
+    #presentation {
+        bottom: 220px;
+    }
+    #texte-presentation {
+        width: 500px;
+    }
+    #img-presentation {
+        display: none;
+    }
+    /*DEROULE*/
+    #prestation-deroule {
+        bottom: 810px;
+        width: 800px;
+    }
+    #prestation-deroule img {
+        width: 65%;
+        margin-bottom: 40px;
+    }
 }
 
 @media all and (min-width: 700px) and (max-width: 1023px) {
-
+    h1 {
+        font-size: 36px;
+    }
+    #texte-banniere {
+        top: 20%;
+    }
+    #presentation {
+        bottom: 220px;
+    }
+    #texte-presentation {
+        width: 400px;
+    }
+    #img-presentation {
+        display: none;
+    }
+    /*DEROULE*/
+    #prestation-deroule {
+        bottom: 825px;
+        width: 600px;
+    }
+    #prestation-deroule img {
+        width: 80%;
+        margin-bottom: 35px;
+    }
 }
 
 @media all and (min-width: 426px) and (max-width: 699px) {
-
+    h1 {
+        font-size: 36px;
+    }
+    #texte-banniere {
+        top: 20%;
+    }
+    #presentation {
+        bottom: 180px;
+    }
+    #texte-presentation {
+        width: 200px;
+    }
+    #img-presentation {
+        display: none;
+    }
+    /*DEROULE*/
+    #prestation-deroule {
+        bottom: 400px;
+        width: 300px;
+    }
+    #prestation-deroule img {
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
-@media all and (min-width: 400px) and (max-width: 425px) {
-
+@media all and (min-width: 376px) and (max-width: 425px) {
+    h1 {
+        font-size: 30px;
+    }
+    #texte-banniere {
+        top: 18%;
+    }
+    #presentation {
+        bottom: 180px;
+    }
+    #texte-presentation {
+        width: 200px;
+    }
+    #img-presentation {
+        display: none;
+    }
+    /*DEROULE*/
+    #prestation-deroule {
+        bottom: 420px;
+        width: 300px;
+    }
+    #prestation-deroule img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
 }
 
-@media all and (max-width: 399px) {
-    
+@media all and (max-width: 375px) {
+    nav {
+        padding: 20px 0px 5px 0px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    #texte-banniere {
+        top: 16%;
+    }
+    #presentation {
+        bottom: 190px;
+    }
+    #texte-presentation {
+        padding: 15px 30px 15px 30px;
+        width: 200px;
+    }
+    #img-presentation {
+        display: none;
+    }
+    /*DEROULE*/
+    #prestation-deroule {
+        bottom: 410px;
+        width: 250px;
+    }
+    #prestation-deroule img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
 }
