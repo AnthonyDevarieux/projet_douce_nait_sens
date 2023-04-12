@@ -1,5 +1,24 @@
 /* RESOLUTION AU DESSUS DE 1900px */
 
+/* Animation */
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(70px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#presentation > * {
+    animation-name: slideFromBottom;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 0.3s;
+}
+
 h1 {
     font-size: 50px;
 }
@@ -16,6 +35,13 @@ nav {
     width: 55%;
 }
 
+/*MAIN*/
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*BANNIERE*/
 #texte-banniere {
     position: absolute;
@@ -27,19 +53,13 @@ nav {
 }
 
 /*PRESENTATION*/
-#main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #presentation {
     position: relative;
     bottom: 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1100px;
+    height: 950px;
 }
 
 #texte-presentation {
@@ -64,21 +84,19 @@ nav {
 }
 
 #logo-presentation {
-    box-shadow: none;
     position: relative;
     top: 70px;
 }
 
 /*DEROULE*/
 #prestation-deroule {
-    position: relative;
-    bottom: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 1400px;
     line-height: 1.4;
+    margin-bottom: 70px;
 }
 
 #prestation-deroule img {
@@ -94,8 +112,6 @@ nav {
 
 /*CARTE CADEAU*/
 #carte-cadeau {
-    position: relative;
-    bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,6 +121,7 @@ nav {
     height: 300px;
     background-color: var(--background-color);
     color: var(--text-color);
+    margin-bottom: 50px;
 }
 
 #carte-cadeau h2 {
@@ -143,20 +160,23 @@ nav {
     h1 {
         font-size: 40px;
     }
+    #presentation {
+        height: 800px;
+    }
     #texte-presentation {
         width: 300px;
     }
     #img-presentation {
-        bottom: 380px;
+        bottom: 360px;
         width: 1300px;
     }
-    #img-presentation img {
-        width: 26%;
+    #logo-presentation {
+        top: 60px;
     }
     /*DEROULE*/
     #prestation-deroule {
-        bottom: 320px;
         width: 1000px;
+        margin-bottom: 60px;
     }
     #prestation-deroule img {
         width: 65%;
@@ -164,9 +184,7 @@ nav {
     }
     /*CARTE CADEAU*/
     #carte-cadeau {
-        bottom: 220px;
         height: 400px;
-        margin-bottom: -200px;
     }
     #carte-cadeau h2 {
         bottom: 20px;
@@ -187,6 +205,7 @@ nav {
         top: 20%;
     }
     #presentation {
+        height: 290px;
         bottom: 220px;
     }
     #texte-presentation {
@@ -197,8 +216,8 @@ nav {
     }
     /*DEROULE*/
     #prestation-deroule {
-        bottom: 810px;
         width: 800px;
+        margin-bottom: 50px;
     }
     #prestation-deroule img {
         box-shadow: 0px 0px 8px var(--primary-color);
@@ -208,9 +227,7 @@ nav {
     }
     /*CARTE CADEAU*/
     #carte-cadeau {
-        bottom: 740px;
         height: 420px;
-        margin-bottom: -740px;
     }
     #carte-cadeau h2 {
         bottom: 20px;
@@ -231,6 +248,7 @@ nav {
         top: 20%;
     }
     #presentation {
+        height: 280px;
         bottom: 220px;
     }
     #texte-presentation {
@@ -241,8 +259,8 @@ nav {
     }
     /*DEROULE*/
     #prestation-deroule {
-        bottom: 825px;
         width: 550px;
+        margin-bottom: 50px;
     }
     #prestation-deroule img {
         box-shadow: 0px 0px 8px var(--primary-color);
@@ -252,9 +270,7 @@ nav {
     }
     /*CARTE CADEAU*/
     #carte-cadeau {
-        bottom: 740px;
         height: 420px;
-        margin-bottom: -740px;
     }
     #carte-cadeau h2 {
         bottom: 20px;
@@ -275,6 +291,7 @@ nav {
         top: 20%;
     }
     #presentation {
+        height: 700px;
         bottom: 180px;
     }
     #texte-presentation {
@@ -285,8 +302,8 @@ nav {
     }
     /*DEROULE*/
     #prestation-deroule {
-        bottom: 400px;
         width: 300px;
+        margin-bottom: 50px;
     }
     #prestation-deroule img {
         box-shadow: 0px 0px 8px var(--primary-color);
@@ -296,9 +313,7 @@ nav {
     }
     /*CARTE CADEAU*/
     #carte-cadeau {
-        bottom: 330px;
         height: 500px;
-        margin-bottom: -380px;
     }
     #carte-cadeau h2 {
         bottom: 25px;
@@ -320,6 +335,7 @@ nav {
         top: 18%;
     }
     #presentation {
+        height: 690px;
         bottom: 180px;
     }
     #texte-presentation {
@@ -330,8 +346,8 @@ nav {
     }
     /*DEROULE*/
     #prestation-deroule {
-        bottom: 420px;
         width: 300px;
+        margin-bottom: 50px;
     }
     #prestation-deroule img {
         box-shadow: 0px 0px 8px var(--primary-color);
@@ -341,9 +357,7 @@ nav {
     }
     /*CARTE CADEAU*/
     #carte-cadeau {
-        bottom: 350px;
         height: 500px;
-        margin-bottom: -380px;
     }
     #carte-cadeau h2 {
         bottom: 20px;
@@ -372,6 +386,7 @@ nav {
         top: 16%;
     }
     #presentation {
+        height: 690px;
         bottom: 190px;
     }
     #texte-presentation {
@@ -383,8 +398,8 @@ nav {
     }
     /*DEROULE*/
     #prestation-deroule {
-        bottom: 415px;
         width: 260px;
+        margin-bottom: 50px;
     }
     #prestation-deroule img {
         box-shadow: 0px 0px 8px var(--primary-color);
@@ -394,9 +409,7 @@ nav {
     }
     /*CARTE CADEAU*/
     #carte-cadeau {
-        bottom: 350px;
         height: 500px;
-        margin-bottom: -380px;
     }
     #carte-cadeau h2 {
         bottom: 15px;
