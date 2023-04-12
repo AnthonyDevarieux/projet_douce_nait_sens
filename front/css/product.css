@@ -8,7 +8,7 @@ h1 {
 nav {
     position: relative;
     z-index: 1;
-    background-color: #FFF5F4;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,8 +43,8 @@ nav {
 }
 
 #texte-presentation {
-    background-color: #da755c81;
-    color: #ffffff;
+    background-color: var(--background-color);
+    color: var(--text-color);
     text-align: center;
     padding: 15px 50px 5px 50px;
     width: 350px;
@@ -94,9 +94,50 @@ nav {
 
 /*CARTE CADEAU*/
 #carte-cadeau {
-    background-color: aqua;
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
+#carte-cadeau h2 {
+    position: relative;
+    bottom: 10px;
+    margin: 0;
+}
+
+#carte-cadeau img {
+    width: 40px;
+}
+
+#carte-cadeau p {
+    width: 60%;
+    line-height: 1.5;
+}
+
+.btn {
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 20px;
+    border: solid 3px var(--text-color);
+    border-radius: 20px;
+    padding: 12px 16px 12px 16px;
+    position: relative;
+    top: 10px;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
 
 @media all and (min-width: 1366px) and (max-width: 1900px) {
     h1 {
@@ -120,6 +161,21 @@ nav {
     #prestation-deroule img {
         width: 65%;
         margin-bottom: 40px;
+    }
+    /*CARTE CADEAU*/
+    #carte-cadeau {
+        bottom: 220px;
+        height: 400px;
+        margin-bottom: -200px;
+    }
+    #carte-cadeau h2 {
+        bottom: 20px;
+    }
+    #carte-cadeau p {
+        line-height: 1.8;
+    }
+    .btn {
+        top: 20px;
     }
 }
 
@@ -145,8 +201,25 @@ nav {
         width: 800px;
     }
     #prestation-deroule img {
+        box-shadow: 0px 0px 8px var(--primary-color);
+        border-radius: 5px;
         width: 65%;
         margin-bottom: 40px;
+    }
+    /*CARTE CADEAU*/
+    #carte-cadeau {
+        bottom: 740px;
+        height: 420px;
+        margin-bottom: -740px;
+    }
+    #carte-cadeau h2 {
+        bottom: 20px;
+    }
+    #carte-cadeau p {
+        line-height: 1.8;
+    }
+    .btn {
+        top: 20px;
     }
 }
 
@@ -169,11 +242,28 @@ nav {
     /*DEROULE*/
     #prestation-deroule {
         bottom: 825px;
-        width: 600px;
+        width: 550px;
     }
     #prestation-deroule img {
-        width: 80%;
-        margin-bottom: 35px;
+        box-shadow: 0px 0px 8px var(--primary-color);
+        border-radius: 5px;
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    /*CARTE CADEAU*/
+    #carte-cadeau {
+        bottom: 740px;
+        height: 420px;
+        margin-bottom: -740px;
+    }
+    #carte-cadeau h2 {
+        bottom: 20px;
+    }
+    #carte-cadeau p {
+        line-height: 1.8;
+    }
+    .btn {
+        top: 20px;
     }
 }
 
@@ -199,8 +289,26 @@ nav {
         width: 300px;
     }
     #prestation-deroule img {
+        box-shadow: 0px 0px 8px var(--primary-color);
+        border-radius: 5px;
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
+    }
+    /*CARTE CADEAU*/
+    #carte-cadeau {
+        bottom: 330px;
+        height: 500px;
+        margin-bottom: -380px;
+    }
+    #carte-cadeau h2 {
+        bottom: 25px;
+    }
+    #carte-cadeau p {
+        line-height: 1.8;
+    }
+    .btn {
+        font-size: 16px;
+        top: 25px;
     }
 }
 
@@ -226,8 +334,30 @@ nav {
         width: 300px;
     }
     #prestation-deroule img {
+        box-shadow: 0px 0px 8px var(--primary-color);
+        border-radius: 5px;
         width: 100%;
         margin-bottom: 25px;
+    }
+    /*CARTE CADEAU*/
+    #carte-cadeau {
+        bottom: 350px;
+        height: 500px;
+        margin-bottom: -380px;
+    }
+    #carte-cadeau h2 {
+        bottom: 20px;
+    }
+    #carte-cadeau img {
+        display: none;
+    }
+    #carte-cadeau p {
+        width: 70%;
+        line-height: 1.8;
+    }
+    .btn {
+        font-size: 16px;
+        top: 20px;
     }
 }
 
@@ -253,11 +383,33 @@ nav {
     }
     /*DEROULE*/
     #prestation-deroule {
-        bottom: 410px;
-        width: 250px;
+        bottom: 415px;
+        width: 260px;
     }
     #prestation-deroule img {
+        box-shadow: 0px 0px 8px var(--primary-color);
+        border-radius: 5px;
         width: 100%;
         margin-bottom: 25px;
+    }
+    /*CARTE CADEAU*/
+    #carte-cadeau {
+        bottom: 350px;
+        height: 500px;
+        margin-bottom: -380px;
+    }
+    #carte-cadeau h2 {
+        bottom: 15px;
+    }
+    #carte-cadeau img {
+        display: none;
+    }
+    #carte-cadeau p {
+        width: 70%;
+        line-height: 1.8;
+    }
+    .btn {
+        font-size: 16px;
+        top: 15px;
     }
 }

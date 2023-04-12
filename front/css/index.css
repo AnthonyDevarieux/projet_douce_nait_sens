@@ -12,7 +12,7 @@ nav {
     position: relative;
     bottom: 140px;
     z-index: 1;
-    background-color: #FFF5F4;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,10 +58,10 @@ nav {
   
 #presentation a:hover {
     display: inline-block;
-    background-color: #DA755C;
+    background-color: var(--primary-color);
     border-radius: 10px;
     padding: 0px 6px 0px 6px;
-    color: #FFF5F4;
+    color: var(--secondary-color);
     font-size: 17px;
     font-weight: 800;
 }
@@ -108,7 +108,7 @@ nav {
 }
 
 .carte:hover {
-    border: 5px solid #DA755C;
+    border: 5px solid var(--primary-color);
 }
 
 .img-carte img {
@@ -147,7 +147,7 @@ nav {
         background-color: transparent;
         border-radius: 0px;
         padding: 0px 0px 0px 0px;
-        color: #DA755C;
+        color: var(--primary-color);
         font-size: 18px;
         font-weight: bold;
     }
@@ -187,7 +187,7 @@ nav {
         background-color: transparent;
         border-radius: 0px;
         padding: 0px 0px 0px 0px;
-        color: #DA755C;
+        color: var(--primary-color);
         font-size: 18px;
         font-weight: bold;
     }
@@ -221,7 +221,7 @@ nav {
         background-color: transparent;
         border-radius: 0px;
         padding: 0px 0px 0px 0px;
-        color: #DA755C;
+        color: var(--primary-color);
         font-size: 16px;
         font-weight: bold;
     }
@@ -261,7 +261,7 @@ nav {
         background-color: transparent;
         border-radius: 0px;
         padding: 0px 0px 0px 0px;
-        color: #DA755C;
+        color: var(--primary-color);
         font-size: 16px;
         font-weight: bold;
     }
@@ -303,7 +303,7 @@ nav {
         background-color: transparent;
         border-radius: 0px;
         padding: 0px 0px 0px 0px;
-        color: #DA755C;
+        color: var(--primary-color);
         font-size: 16px;
         font-weight: bold;
     }
@@ -348,7 +348,7 @@ nav {
         background-color: transparent;
         border-radius: 0px;
         padding: 0px 0px 0px 0px;
-        color: #DA755C;
+        color: var(--primary-color);
         font-size: 16px;
         font-weight: bold;
     }
