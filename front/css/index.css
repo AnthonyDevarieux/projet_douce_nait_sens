@@ -51,12 +51,13 @@ nav {
 }
 
 #presentation a {
-    font-weight: bold;
+    text-decoration: underline;
     display: inline-block;
     transition: all 0.6s ease-in-out;
 }
   
 #presentation a:hover {
+    text-decoration: none;
     display: inline-block;
     background-color: var(--primary-color);
     border-radius: 10px;
@@ -289,7 +290,6 @@ nav {
         text-align: center;
         left: 15%;
         right: 15%;
-        transform: translateY(-50%), translateX(-50%);
     }
     #phrase-accroche {
         font-size: 20px;
@@ -334,7 +334,6 @@ nav {
         text-align: center;
         left: 15%;
         right: 15%;
-        transform: translateY(-50%), translateX(-50%);
     }
     #phrase-accroche {
         font-size: 20px;
