@@ -25,7 +25,7 @@ nav {
 #texte-banniere {
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 18%;
     transform: translateY(-50%);
 }
 
@@ -51,20 +51,19 @@ nav {
 }
 
 #presentation a {
-    text-decoration: underline;
+    font-weight: 700;
     display: inline-block;
     transition: all 0.6s ease-in-out;
 }
   
 #presentation a:hover {
-    text-decoration: none;
     display: inline-block;
     background-color: var(--primary-color);
     border-radius: 10px;
     padding: 0px 6px 0px 6px;
     color: var(--secondary-color);
     font-size: 17px;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 #formation {
@@ -247,7 +246,7 @@ nav {
     }
     /*BANNIERE*/
     #texte-banniere {
-        left: 10%;
+        left: 6%;
     }
     #texte-banniere h1 {
         font-size: 28px;

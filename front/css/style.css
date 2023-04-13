@@ -284,6 +284,12 @@ footer {
     }
     /*MAIN*/
     /*BANNIERE*/
+    #banniere {
+        height: 500px;
+    }
+    #banniere img {
+        height: 500px;
+    }
     /*FOOTER*/
     #infos-footer {
         flex-direction: column;
@@ -319,11 +325,10 @@ footer {
     /*MAIN*/
     /*BANNIERE*/
     #banniere {
-        height: 500px;
+        height: 450px;
     }
-    
     #banniere img {
-        height: 500px;
+        height: 450px;
     }
     /*FOOTER*/
     #infos-footer {
@@ -361,11 +366,11 @@ footer {
     /*MAIN*/
     /*BANNIERE*/
     #banniere {
-        height: 500px;
+        height: 450px;
     }
     
     #banniere img {
-        height: 500px;
+        height: 450px;
     }
     /*FOOTER*/
     #infos-footer {

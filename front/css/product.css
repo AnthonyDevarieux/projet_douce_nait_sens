@@ -20,7 +20,7 @@
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 52px;
 }
 
 /*BARRE DE NAVIGATION*/
@@ -46,20 +46,19 @@ nav {
 #texte-banniere {
     position: absolute;
     text-align: center;
-    line-height: 1.5;
     right: 10%;
     left: 10%;
-    top: 25%;
+    top: 18%;
 }
 
 /*PRESENTATION*/
 #presentation {
     position: relative;
-    bottom: 240px;
+    bottom: 290px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 950px;
+    height: 880px;
 }
 
 #texte-presentation {
@@ -72,7 +71,7 @@ nav {
 
 #img-presentation {
     position: relative;
-    bottom: 440px;
+    bottom: 460px;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -85,7 +84,7 @@ nav {
 
 #logo-presentation {
     position: relative;
-    top: 70px;
+    top: 80px;
 }
 
 /*DEROULE*/
@@ -96,12 +95,12 @@ nav {
     text-align: center;
     width: 1400px;
     line-height: 1.4;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 #prestation-deroule img {
     width: 55%;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 #prestation-deroule aside {
@@ -158,25 +157,27 @@ nav {
 
 @media all and (min-width: 1366px) and (max-width: 1900px) {
     h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
+    /*PRESENTATION*/
     #presentation {
-        height: 800px;
+        height: 720px;
+        bottom: 300px;
     }
     #texte-presentation {
         width: 300px;
     }
     #img-presentation {
-        bottom: 360px;
-        width: 1300px;
+        bottom: 400px;
+        width: 1340px;
     }
     #logo-presentation {
-        top: 60px;
+        top: 70px;
     }
     /*DEROULE*/
     #prestation-deroule {
         width: 1000px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
     #prestation-deroule img {
         width: 65%;
@@ -199,14 +200,16 @@ nav {
 
 @media all and (min-width: 1024px) and (max-width: 1365px) {
     h1 {
-        font-size: 40px;
+        font-size: 46px;
     }
+    /*BANNIERE*/
     #texte-banniere {
-        top: 20%;
+        top: 14%;
     }
+    /*PRESENTATION*/
     #presentation {
-        height: 290px;
-        bottom: 220px;
+        height: 230px;
+        bottom: 280px;
     }
     #texte-presentation {
         width: 500px;
@@ -220,10 +223,10 @@ nav {
         margin-bottom: 50px;
     }
     #prestation-deroule img {
-        box-shadow: 0px 0px 8px var(--primary-color);
+        box-shadow: 0px 0px 6px var(--primary-color);
         border-radius: 5px;
-        width: 65%;
-        margin-bottom: 40px;
+        width: 75%;
+        margin-bottom: 50px;
     }
     /*CARTE CADEAU*/
     #carte-cadeau {
@@ -242,14 +245,19 @@ nav {
 
 @media all and (min-width: 700px) and (max-width: 1023px) {
     h1 {
-        font-size: 36px;
+        font-size: 42px;
+        line-height: 1.6;
     }
+    /*BANNIERE*/
     #texte-banniere {
-        top: 20%;
+        right: 20%;
+        left: 20%;
+        top: 8%;
     }
+    /*PRESENTATION*/
     #presentation {
         height: 280px;
-        bottom: 220px;
+        bottom: 210px;
     }
     #texte-presentation {
         width: 400px;
@@ -263,10 +271,10 @@ nav {
         margin-bottom: 50px;
     }
     #prestation-deroule img {
-        box-shadow: 0px 0px 8px var(--primary-color);
+        box-shadow: 0px 0px 6px var(--primary-color);
         border-radius: 5px;
         width: 90%;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
     /*CARTE CADEAU*/
     #carte-cadeau {
@@ -286,13 +294,18 @@ nav {
 @media all and (min-width: 426px) and (max-width: 699px) {
     h1 {
         font-size: 36px;
+        line-height: 1.6;
     }
+    /*BANNIERE*/
     #texte-banniere {
-        top: 20%;
+        right: 15%;
+        left: 15%;
+        top: 7%;
     }
+    /*PRESENTATION*/
     #presentation {
-        height: 700px;
-        bottom: 180px;
+        height: 630px;
+        bottom: 240px;
     }
     #texte-presentation {
         width: 200px;
@@ -306,10 +319,10 @@ nav {
         margin-bottom: 50px;
     }
     #prestation-deroule img {
-        box-shadow: 0px 0px 8px var(--primary-color);
+        box-shadow: 0px 0px 6px var(--primary-color);
         border-radius: 5px;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     /*CARTE CADEAU*/
     #carte-cadeau {
@@ -329,14 +342,17 @@ nav {
 
 @media all and (min-width: 376px) and (max-width: 425px) {
     h1 {
-        font-size: 30px;
+        font-size: 36px;
+        line-height: 1.6;
     }
+    /*BANNIERE*/
     #texte-banniere {
-        top: 18%;
+        top: 7%;
     }
+    /*PRESENTATION*/
     #presentation {
-        height: 690px;
-        bottom: 180px;
+        height: 620px;
+        bottom: 240px;
     }
     #texte-presentation {
         width: 200px;
@@ -350,7 +366,7 @@ nav {
         margin-bottom: 50px;
     }
     #prestation-deroule img {
-        box-shadow: 0px 0px 8px var(--primary-color);
+        box-shadow: 0px 0px 6px var(--primary-color);
         border-radius: 5px;
         width: 100%;
         margin-bottom: 25px;
@@ -376,18 +392,24 @@ nav {
 }
 
 @media all and (max-width: 375px) {
+    h1 {
+        font-size: 34px;
+        line-height: 1.6;
+    }
+    /*BARRE DE NAVIGATION*/
     nav {
         padding: 20px 0px 5px 0px;
     }
-    h1 {
-        font-size: 30px;
-    }
+    /*BANNIERE*/
     #texte-banniere {
-        top: 16%;
+        right: 5%;
+        left: 5%;
+        top: 6%;
     }
+    /*PRESENTATION*/
     #presentation {
-        height: 690px;
-        bottom: 190px;
+        height: 620px;
+        bottom: 260px;
     }
     #texte-presentation {
         padding: 15px 30px 15px 30px;
@@ -399,13 +421,13 @@ nav {
     /*DEROULE*/
     #prestation-deroule {
         width: 260px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
     #prestation-deroule img {
-        box-shadow: 0px 0px 8px var(--primary-color);
+        box-shadow: 0px 0px 6px var(--primary-color);
         border-radius: 5px;
         width: 100%;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
     }
     /*CARTE CADEAU*/
     #carte-cadeau {
