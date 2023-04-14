@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="front/css/normalize.css">
         <link rel="stylesheet" href="front/css/style.css">
         <link rel="stylesheet" href="front/css/contact.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     </head>
 
     <body>
@@ -41,6 +44,36 @@
                 <div id="texte-banniere">
                     <h1>Contact</h1>
                 </div>
+
+                <p>Si vous avez des questions ou si vous souhaitez obtenir plus d'informations sur mes services, n'hésitez pas à me contacter.<br>
+                Je suis là pour vous aider et je serais ravi de discuter avec vous de vos besoins et de vos objectifs.</p>
+
+                <section id="information">
+                    <h2>Informations :</h2>
+
+                    <ul id="icons-contact">
+                        <li><a href="https://www.google.com/maps/place/10+Rue+Truchon,+33140+Cadaujac/@44.7507141,-0.5335931,19.96z/data=!4m6!3m5!1s0xd552165d928b56d:0xf61c48bf8030ff99!8m2!3d44.750804!4d-0.5337061!16s%2Fg%2F11c4y2n0m7?authuser=0"><img src="front/images/icon_maison.svg" alt="Adresse">Rue Truchon, 33140 Cadaujac</a></li>
+                        <li><a href="tel:+33123456789"><img src="front/images/icon_tel.svg" alt="Téléphone">06 06 06 06 06</a></li>
+                        <li><a href="mailto:contact@doucenaitsens.fr"><img src="front/images/icon_mail.svg" alt="Email">contact@doucenaitsens.fr</a></li>
+                        <li><a href="#"><img src="front/images/icon_facebook.svg" alt="Facebook">Facebook</a></li>
+                        <li><a href="#"><img src="front/images/icon_insta.svg" alt="Instagram">Instagram</a></li>
+                    </ul>
+
+                    <div id="map"></div>
+                </section>
+
+                <section id="horaire">
+                    <h2>Horaires :</h2>
+
+                    <div id="semaine">
+                        <p>Lundi : 9h à 18h</p>
+                        <p>Mardi : 9h à 18h</p>
+                        <p>Mercredi : 9h à 18h</p>
+                        <p>Jeudi : 9h à 18h</p>
+                        <p>Vendredi : 9h à 18h</p>
+                        <p>Samedi : 9h à 18h</p>
+                    </div>
+                </section>
             </div>
         </main>
 
@@ -73,8 +106,6 @@
 
         <p>Site web propulsé par AD WebCreation</p>
 
-        <button id="back-to-top"><img src="front/images/bouton_remonte_page.svg" alt="Bouton remonter"></button>
-
-        <script src="front/js/back_to_top.js"></script>
+        <script src="front/js/map.js"></script>
     </body>
 </html>

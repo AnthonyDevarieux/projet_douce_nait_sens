@@ -31,6 +31,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'BacktoBlackDemo', serif;
+    font-weight: 100;
 }
 
 h1, h2 {
@@ -43,6 +44,7 @@ h3 {
 
 p {
     font-size: 20px;
+    font-weight: 500;
 }
 
 ul {
@@ -50,6 +52,7 @@ ul {
 }
 
 a {
+    font-weight: 500;
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -150,7 +153,7 @@ nav ul ul a:hover {
     padding: 0;
     opacity: 0;
     transition: opacity 2s, visibility 2s;
-    width: 4%;
+    width: 3.5%;
 }
   
 #back-to-top img {
@@ -240,7 +243,6 @@ footer {
     p {
         font-size: 18px;
     }
-    /*HEADER*/
     /*BARRE DE NAVIGATION*/
     nav a {
         font-size: 22px;
@@ -253,9 +255,6 @@ footer {
         bottom: 80px;
         right: 80px;
     }
-    /*MAIN*/
-    /*BANNIERE*/
-    /*FOOTER*/
 }
 
 @media all and (min-width: 1024px) and (max-width: 1365px) {
@@ -268,7 +267,6 @@ footer {
     p {
         font-size: 18px;
     }
-    /*HEADER*/
     /*BARRE DE NAVIGATION*/
     nav a {
         font-size: 22px;
@@ -282,7 +280,6 @@ footer {
         right: 70px;
         width: 5%;
     }
-    /*MAIN*/
     /*BANNIERE*/
     #banniere {
         height: 500px;
@@ -300,7 +297,7 @@ footer {
 
 @media all and (min-width: 700px) and (max-width: 1023px) {
     h1, h2 {
-        font-size: 28px;
+        font-size: 30px;
     }
     h3 {
         font-size: 22px;
@@ -308,7 +305,6 @@ footer {
     p {
         font-size: 16px;
     }
-    /*HEADER*/
     /*BARRE DE NAVIGATION*/
     nav a {
         font-size: 22px;
@@ -322,7 +318,6 @@ footer {
         right: 60px;
         width: 7%;
     }
-    /*MAIN*/
     /*BANNIERE*/
     #banniere {
         height: 450px;
@@ -340,15 +335,14 @@ footer {
 
 @media all and (min-width: 426px) and (max-width: 699px) {
     h1, h2 {
-        font-size: 28px;
+        font-size: 30px;
     }
     h3 {
-        font-size: 20px;
+        font-size: 22px;
     }
     p {
         font-size: 16px;
     }
-    /*HEADER*/
     /*BARRE DE NAVIGATION*/
     nav a {
         padding: 15px 25px 10px 25px;
@@ -363,7 +357,6 @@ footer {
         right: 30px;
         width: 10%;
     }
-    /*MAIN*/
     /*BANNIERE*/
     #banniere {
         height: 450px;
@@ -385,12 +378,11 @@ footer {
         font-size: 28px;
     }
     h3 {
-        font-size: 20px;
+        font-size: 22px;
     }
     p {
         font-size: 16px;
     }
-    /*HEADER*/
     /*BARRE DE NAVIGATION*/
     nav a {
         padding: 15px 20px 10px 20px;
@@ -405,7 +397,6 @@ footer {
         right: 20px;
         width: 12%;
     }
-    /*MAIN*/
     /*BANNIERE*/
     #banniere {
         height: 450px;
@@ -450,7 +441,6 @@ footer {
         right: 20px;
         width: 14%;
     }
-    /*MAIN*/
     /*BANNIERE*/
     #banniere {
         height: 450px;

@@ -45,9 +45,9 @@ nav {
 #presentation {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
-    line-height: 1.5;
-    width: 40%;
+    margin-top: 40px;
+    line-height: 1.4;
+    width: 50%;
 }
 
 #presentation a {
@@ -69,8 +69,8 @@ nav {
 #formation {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
-    line-height: 1.5;
+    margin-top: 30px;
+    line-height: 1.4;
     width: 50%;
 }
 
@@ -88,8 +88,8 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 90px;
-    margin-bottom: 70px;
+    margin-top: 70px;
+    margin-bottom: 60px;
 }
 
 #carte-prestation {
@@ -100,12 +100,12 @@ nav {
 }
 
 .carte {
-    margin: 30px 15px 0px 15px;
-    padding: 15px 30px 0px 30px;
+    margin: 30px 10px 0px 10px;
+    padding: 30px 40px 0px 40px;
     border-radius: 80px;
     width: 260px;
     border: 5px solid transparent;
-    transition: border-color 0.8s ease-in-out;
+    transition: border-color 1.5s ease-in-out;
 }
 
 .carte:hover {
@@ -113,15 +113,15 @@ nav {
 }
 
 .img-carte img {
-    box-shadow: 0px 0px 2px #da755c2a;
     border-radius: 60px;
+    margin-bottom: 8px;
     width: 96%;
     object-fit: cover;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 }
 
 .carte:hover .img-carte img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 @media all and (min-width: 1366px) and (max-width: 1900px) {
@@ -142,7 +142,7 @@ nav {
     }
     /*ARTICLES*/
     #presentation {
-        width: 55%;
+        width: 65%;
     }
     #presentation a:hover {
         background-color: transparent;
@@ -153,7 +153,7 @@ nav {
         font-weight: bold;
     }
     #formation {
-        width: 70%;
+        width: 65%;
     }
     /*PRESTATIONS*/
     #carte-prestation {
@@ -179,7 +179,7 @@ nav {
     }
     /*ARTICLES*/
     #presentation {
-        width: 60%;
+        width: 70%;
     }
     #formation {
         width: 70%;
@@ -212,11 +212,11 @@ nav {
         left: 10%;
     }
     #phrase-accroche {
-        font-size: 20px;
+        font-size: 22px;
     }
     /*ARTICLES*/
     #presentation {
-        width: 75%;
+        width: 80%;
     }
     #presentation a:hover {
         background-color: transparent;
@@ -252,11 +252,11 @@ nav {
         font-size: 28px;
     }
     #phrase-accroche {
-        font-size: 20px;
+        font-size: 22px;
     }
     /*ARTICLES*/
     #presentation {
-        width: 75%;
+        width: 85%;
     }
     #presentation a:hover {
         background-color: transparent;
@@ -267,7 +267,7 @@ nav {
         font-weight: bold;
     }
     #formation {
-        width: 80%;
+        width: 85%;
     }
     /*PRESTATIONS*/
     #carte-prestation {
@@ -286,18 +286,17 @@ nav {
     }
     /*BANNIERE*/
     #texte-banniere {
-        line-height: 1.8;
+        line-height: 1.6;
         text-align: center;
         left: 15%;
         right: 15%;
     }
     #phrase-accroche {
-        font-size: 20px;
+        font-size: 22px;
     }
     /*ARTICLES*/
     #presentation {
-        padding-top: 50px;
-        width: 75%;
+        width: 85%;
     }
     #presentation a:hover {
         background-color: transparent;
@@ -308,8 +307,7 @@ nav {
         font-weight: bold;
     }
     #formation {
-        padding-top: 40px;
-        width: 80%;
+        width: 85%;
     }
     /*PRESTATIONS*/
     #carte-prestation {
@@ -340,8 +338,7 @@ nav {
     }
     /*ARTICLES*/
     #presentation {
-        padding-top: 50px;
-        width: 75%;
+        width: 85%;
     }
     #presentation a:hover {
         background-color: transparent;
@@ -352,8 +349,7 @@ nav {
         font-weight: bold;
     }
     #formation {
-        padding-top: 40px;
-        width: 80%;
+        width: 85%;
     }
     /*PRESTATIONS*/
     #carte-prestation {
