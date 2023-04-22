@@ -1,22 +1,47 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* RESOLUTION AU DESSUS DE 1900px */
 
 /* Animation */
-@keyframes slideFromBottom {
+@-webkit-keyframes slideFromBottom {
     0% {
-        transform: translateY(70px);
+        -webkit-transform: translateY(70px);
+                transform: translateY(70px);
         opacity: 0;
     }
     100% {
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideFromBottom {
+    0% {
+        -webkit-transform: translateY(70px);
+                transform: translateY(70px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
         opacity: 1;
     }
 }
 
 #presentation > * {
-    animation-name: slideFromBottom;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    animation-delay: 0.3s;
+    -webkit-animation-name: slideFromBottom;
+            animation-name: slideFromBottom;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
 }
 
 h1 {
@@ -28,18 +53,31 @@ nav {
     position: relative;
     z-index: 1;
     background-color: var(--secondary-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px 0;
     width: 55%;
 }
 
 /*MAIN*/
 #main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /*BANNIERE*/
@@ -55,9 +93,16 @@ nav {
 #presentation {
     position: relative;
     bottom: 290px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 880px;
 }
 
@@ -72,9 +117,14 @@ nav {
 #img-presentation {
     position: relative;
     bottom: 460px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     width: 1600px;
 }
 
@@ -89,9 +139,16 @@ nav {
 
 /*DEROULE*/
 #prestation-deroule {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     width: 1400px;
     line-height: 1.4;
@@ -104,17 +161,29 @@ nav {
 }
 
 #prestation-deroule aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 300px;
 }
 
 /*CARTE CADEAU*/
 #carte-cadeau {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     width: 100%;
     height: 300px;
@@ -142,11 +211,14 @@ nav {
     background-color: transparent;
     color: var(--text-color);
     font-size: 20px;
+    line-height: 1;
     border: solid 3px var(--text-color);
     border-radius: 20px;
     padding: 12px 16px 12px 16px;
     position: relative;
     top: 10px;
+    -webkit-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
 }
 
@@ -223,7 +295,8 @@ nav {
         margin-bottom: 50px;
     }
     #prestation-deroule img {
-        box-shadow: 0px 0px 6px var(--primary-color);
+        -webkit-box-shadow: 0px 0px 6px var(--primary-color);
+                box-shadow: 0px 0px 6px var(--primary-color);
         border-radius: 5px;
         width: 75%;
         margin-bottom: 50px;
@@ -271,7 +344,8 @@ nav {
         margin-bottom: 50px;
     }
     #prestation-deroule img {
-        box-shadow: 0px 0px 6px var(--primary-color);
+        -webkit-box-shadow: 0px 0px 6px var(--primary-color);
+                box-shadow: 0px 0px 6px var(--primary-color);
         border-radius: 5px;
         width: 90%;
         margin-bottom: 35px;
@@ -319,7 +393,8 @@ nav {
         margin-bottom: 50px;
     }
     #prestation-deroule img {
-        box-shadow: 0px 0px 6px var(--primary-color);
+        -webkit-box-shadow: 0px 0px 6px var(--primary-color);
+                box-shadow: 0px 0px 6px var(--primary-color);
         border-radius: 5px;
         width: 100%;
         margin-bottom: 30px;
@@ -366,7 +441,8 @@ nav {
         margin-bottom: 50px;
     }
     #prestation-deroule img {
-        box-shadow: 0px 0px 6px var(--primary-color);
+        -webkit-box-shadow: 0px 0px 6px var(--primary-color);
+                box-shadow: 0px 0px 6px var(--primary-color);
         border-radius: 5px;
         width: 100%;
         margin-bottom: 25px;
@@ -424,7 +500,8 @@ nav {
         margin-bottom: 40px;
     }
     #prestation-deroule img {
-        box-shadow: 0px 0px 6px var(--primary-color);
+        -webkit-box-shadow: 0px 0px 6px var(--primary-color);
+                box-shadow: 0px 0px 6px var(--primary-color);
         border-radius: 5px;
         width: 100%;
         margin-bottom: 35px;
