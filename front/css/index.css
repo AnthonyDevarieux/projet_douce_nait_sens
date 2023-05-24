@@ -77,24 +77,6 @@ nav {
     width: 50%;
 }
 
-#presentation a {
-    font-weight: 700;
-    display: inline-block;
-    -webkit-transition: all 0.6s ease-in-out;
-    -o-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
-}
-  
-#presentation a:hover {
-    display: inline-block;
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    padding: 0px 6px 0px 6px;
-    color: var(--secondary-color);
-    font-size: 17px;
-    font-weight: 600;
-}
-
 #formation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -161,6 +143,7 @@ nav {
 }
 
 .img-carte img {
+    box-shadow: 4px 6px 8px rgb(187, 187, 187);
     border-radius: 60px;
     margin-bottom: 8px;
     width: 96%;
@@ -199,14 +182,6 @@ nav {
     #presentation {
         width: 65%;
     }
-    #presentation a:hover {
-        background-color: transparent;
-        border-radius: 0px;
-        padding: 0px 0px 0px 0px;
-        color: var(--primary-color);
-        font-size: 18px;
-        font-weight: bold;
-    }
     #formation {
         width: 65%;
     }
@@ -239,14 +214,6 @@ nav {
     #formation {
         width: 70%;
     }
-    #presentation a:hover {
-        background-color: transparent;
-        border-radius: 0px;
-        padding: 0px 0px 0px 0px;
-        color: var(--primary-color);
-        font-size: 18px;
-        font-weight: bold;
-    }
     /*PRESTATIONS*/
     #carte-prestation {
         width: 90%;
@@ -272,14 +239,6 @@ nav {
     /*ARTICLES*/
     #presentation {
         width: 80%;
-    }
-    #presentation a:hover {
-        background-color: transparent;
-        border-radius: 0px;
-        padding: 0px 0px 0px 0px;
-        color: var(--primary-color);
-        font-size: 16px;
-        font-weight: bold;
     }
     #formation {
         width: 80%;
@@ -313,14 +272,6 @@ nav {
     #presentation {
         width: 85%;
     }
-    #presentation a:hover {
-        background-color: transparent;
-        border-radius: 0px;
-        padding: 0px 0px 0px 0px;
-        color: var(--primary-color);
-        font-size: 16px;
-        font-weight: bold;
-    }
     #formation {
         width: 85%;
     }
@@ -352,14 +303,6 @@ nav {
     /*ARTICLES*/
     #presentation {
         width: 85%;
-    }
-    #presentation a:hover {
-        background-color: transparent;
-        border-radius: 0px;
-        padding: 0px 0px 0px 0px;
-        color: var(--primary-color);
-        font-size: 16px;
-        font-weight: bold;
     }
     #formation {
         width: 85%;
@@ -394,14 +337,6 @@ nav {
     /*ARTICLES*/
     #presentation {
         width: 85%;
-    }
-    #presentation a:hover {
-        background-color: transparent;
-        border-radius: 0px;
-        padding: 0px 0px 0px 0px;
-        color: var(--primary-color);
-        font-size: 16px;
-        font-weight: bold;
     }
     #formation {
         width: 85%;
