@@ -59,6 +59,7 @@ nav {
             align-items: center;
     width: 100%;
     height: 140px;
+    text-align: center;
 }
 
 /*PARAGRAPHE*/
@@ -157,6 +158,30 @@ nav {
     padding-bottom: 55px;
 }
 
+/*MENTIONS LEGALES*/
+#mentions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 98%;
+}
+
+#mentions h2 {
+    font-family: 'HelveticaNeueLTCom', sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#mentions p {
+    margin: 5px 0px 5px 0px;
+    line-height: normal;
+}
+
 @media all and (min-width: 1366px) and (max-width: 1900px) {
     /*PARAGRAPHE*/
     #main p {
@@ -187,6 +212,29 @@ nav {
     #semaine {
         margin-left: 30px;
         padding-bottom: 30px;
+    }
+    /*MENTIONS LEGALES*/
+    #mentions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 98%;
+    }
+
+    #mentions h2 {
+        font-family: 'HelveticaNeueLTCom', sans-serif;
+        font-size: x-large;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #mentions p {
+        margin: 5px 0px 5px 0px;
+        line-height: normal;
     }
 }
 
@@ -246,6 +294,29 @@ nav {
     #semaine p {
         margin: 0;
     }
+    /*MENTIONS LEGALES*/
+    #mentions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 98%;
+    }
+
+    #mentions h2 {
+        font-family: 'HelveticaNeueLTCom', sans-serif;
+        font-size: x-large;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #mentions p {
+        margin: 5px 0px 5px 0px;
+        line-height: normal;
+    }
 }
 
 @media all and (min-width: 700px) and (max-width: 1023px) {
@@ -304,6 +375,29 @@ nav {
 
     #semaine p {
         margin: 0;
+    }
+    /*MENTIONS LEGALES*/
+    #mentions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 98%;
+    }
+
+    #mentions h2 {
+        font-family: 'HelveticaNeueLTCom', sans-serif;
+        font-size: x-large;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #mentions p {
+        margin: 5px 0px 5px 0px;
+        line-height: normal;
     }
 }
 
@@ -373,7 +467,6 @@ nav {
         margin-top: 40px;
         margin-bottom: 20px;
     }
-
     #semaine {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -382,9 +475,31 @@ nav {
         margin: 0;
         padding-bottom: 0;
     }
-
     #semaine p {
         margin: 0;
+    }
+    /*MENTIONS LEGALES*/
+    #mentions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 98%;
+    }
+
+    #mentions h2 {
+        font-family: 'HelveticaNeueLTCom', sans-serif;
+        font-size: x-large;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #mentions p {
+        margin: 5px 0px 5px 0px;
+        line-height: normal;
     }
 }
 
@@ -454,7 +569,6 @@ nav {
         margin-top: 40px;
         margin-bottom: 20px;
     }
-
     #semaine {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -463,9 +577,31 @@ nav {
         margin: 0;
         padding-bottom: 0;
     }
-
     #semaine p {
         margin: 0;
+    }
+    /*MENTIONS LEGALES*/
+    #mentions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 98%;
+    }
+
+    #mentions h2 {
+        font-family: 'HelveticaNeueLTCom', sans-serif;
+        font-size: x-large;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #mentions p {
+        margin: 5px 0px 5px 0px;
+        line-height: normal;
     }
 }
 
@@ -540,7 +676,6 @@ nav {
         margin-top: 40px;
         margin-bottom: 20px;
     }
-
     #semaine {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -549,8 +684,30 @@ nav {
         margin: 0;
         padding-bottom: 0;
     }
-
     #semaine p {
         margin: 0;
+    }
+    /*MENTIONS LEGALES*/
+    #mentions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 98%;
+    }
+
+    #mentions h2 {
+        font-family: 'HelveticaNeueLTCom', sans-serif;
+        font-size: x-large;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #mentions p {
+        margin: 5px 0px 5px 0px;
+        line-height: normal;
     }
 }
