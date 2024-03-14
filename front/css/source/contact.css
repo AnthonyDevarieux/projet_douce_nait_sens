@@ -129,7 +129,7 @@ nav {
 }
 
 /*HORAIRE*/
-#horaire {
+#horaire, #cabinet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -143,20 +143,32 @@ nav {
     margin-top: 40px;
 }
 
-#semaine {
+#semaine, #cab-photo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 85%;
     margin-left: 85px;
     padding-bottom: 55px;
 }
+
+/*CABINET*/
+
+.cab-photo{
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    border-radius: 30%;
+}
+
 
 /*MENTIONS LEGALES*/
 #mentions {
@@ -204,15 +216,16 @@ nav {
         height: 330px;
     }
     /*HORAIRE*/
-    #horaire {
+    #horaire, #cabinet {
         width: 1200px;
         margin-top: 10px;
 
     }
-    #semaine {
+    #semaine, #cab-photo {
         margin-left: 30px;
         padding-bottom: 30px;
     }
+
     /*MENTIONS LEGALES*/
     #mentions {
         display: flex;
@@ -236,6 +249,7 @@ nav {
         margin: 5px 0px 5px 0px;
         line-height: normal;
     }
+
 }
 
 @media all and (min-width: 1024px) and (max-width: 1365px) {
@@ -270,7 +284,7 @@ nav {
         width: 800px;
     }
     /*HORAIRE*/
-    #horaire {
+    #horaire, #cabinet {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -282,7 +296,7 @@ nav {
         margin-top: 30px;
     }
 
-    #semaine {
+    #semaine, #cab-photo {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -317,6 +331,7 @@ nav {
         margin: 5px 0px 5px 0px;
         line-height: normal;
     }
+
 }
 
 @media all and (min-width: 700px) and (max-width: 1023px) {
@@ -352,7 +367,7 @@ nav {
         width: 900px;
     }
     /*HORAIRE*/
-    #horaire {
+    #horaire, #cabinet {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -364,7 +379,7 @@ nav {
         margin-top: 30px;
     }
 
-    #semaine {
+    #semaine, #cab-photo {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -455,7 +470,7 @@ nav {
         height: 300px;
     }
     /*HORAIRE*/
-    #horaire {
+    #horaire, #cabinet {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -467,7 +482,7 @@ nav {
         margin-top: 40px;
         margin-bottom: 20px;
     }
-    #semaine {
+    #semaine, #cab-photo {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -557,7 +572,7 @@ nav {
         height: 300px;
     }
     /*HORAIRE*/
-    #horaire {
+    #horaire, #cabinet {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -569,7 +584,7 @@ nav {
         margin-top: 40px;
         margin-bottom: 20px;
     }
-    #semaine {
+    #semaine, #cab-photo {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -664,7 +679,7 @@ nav {
         height: 280px;
     }
     /*HORAIRE*/
-    #horaire {
+    #horaire, #cabinet {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -676,7 +691,7 @@ nav {
         margin-top: 40px;
         margin-bottom: 20px;
     }
-    #semaine {
+    #semaine, #cab-photo {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;

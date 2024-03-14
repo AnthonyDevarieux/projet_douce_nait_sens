@@ -212,6 +212,18 @@ nav {
     color: var(--background-color);
 }
 
+#photographe {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.photographe-logo {
+    min-height: 30rem;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+}
+
 @media all and (min-width: 1366px) and (max-width: 1900px) {
     h1 {
         font-size: 50px;
@@ -349,6 +361,13 @@ nav {
     .btn {
         top: 20px;
     }
+
+    .photographe-logo {
+        min-height: 20rem;
+        width: auto;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 @media all and (min-width: 426px) and (max-width: 699px) {
@@ -395,6 +414,13 @@ nav {
     .btn {
         font-size: 16px;
         top: 25px;
+    }
+
+    .photographe-logo {
+        min-height: 20rem;
+        width: auto;
+        background-size: cover;
+        background-position: center;
     }
 }
 
@@ -446,6 +472,13 @@ nav {
     .btn {
         font-size: 16px;
         top: 20px;
+    }
+
+    .photographe-logo {
+        min-height: 20rem;
+        width: auto;
+        background-size: cover;
+        background-position: center;
     }
 }
 
